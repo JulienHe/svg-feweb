@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animation with SVG</title>
+	<link rel="stylesheet" href="css/application.css">
+</head>
+
+<body>
+	<div class="mysvg">
+		
+		<!-- SVG -->
+		<svg version="1.1" id="serveur" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+			<g>
+				<g id="signalOne">
+					<rect x="1.9" y="35.8" class="rect" width="196" height="54"/>
+					<path class="switch" d="M42.5,62.8c0,7.5-6.1,13.5-13.5,13.5s-13.5-6.1-13.5-13.5c0-7.5,6.1-13.5,13.5-13.5S42.5,55.3,42.5,62.8
+					z"/>
+					<circle class="check--one" cx="116.9" cy="62.8" r="6.8"/>
+					<circle class="check--two" cx="144" cy="62.8" r="6.8"/>
+					<circle class="check--three" cx="171" cy="62.8" r="6.8"/>
+				</g>
+
+				<g id="signalTwo">
+					<polyline class="rect" points="198.1,89.9 198.1,144 1.9,144 1.9,89.9 "/>
+					<path class="switch" d="M42.5,116.9c0,7.5-6.1,13.5-13.5,13.5s-13.5-6.1-13.5-13.5c0-7.5,6.1-13.5,13.5-13.5
+					S42.5,109.4,42.5,116.9z"/>
+					<circle class="check--one" cx="116.9" cy="116.9" r="6.8"/>
+					<circle class="check--two" cx="144" cy="116.9" r="6.8"/>
+					<circle class="check--three" cx="171" cy="116.9" r="6.8"/>
+				</g>
+
+				<g id="signalThree">
+					<path class="rect" d="M1.9,144v37.2c0,9.3,7.6,16.9,16.9,16.9h162.3c9.3,0,16.9-7.6,16.9-16.9V144"/>
+					<path class="switch" d="M42.5,171c0,7.5-6.1,13.5-13.5,13.5s-13.5-6.1-13.5-13.5c0-7.5,6.1-13.5,13.5-13.5
+					S42.5,163.5,42.5,171z"/>
+					<circle class="check--three" cx="171" cy="171" r="6.8"/>
+					<circle class="check--two" cx="144" cy="171" r="6.8"/>
+					<circle class="check--one" cx="116.9" cy="171" r="6.8"/>
+				</g>
+			</g>
+		</svg>
+
+
+		<!-- Controler -->
+		<section class="controler">
+			<button data-click="signalOne">Activate 1</button>
+			<button data-click="signalTwo">Activate 2</button>
+			<button data-click="signalThree">Activate 3</button>
+		</section>
+	</div>
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

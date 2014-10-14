@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".controler").on("click","button",function(c){var o=$(this).data("click");console.log("#"+o+" .check--one"),$("#"+o+" .check--one").addClass("activate")})});
